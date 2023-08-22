@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>DIABETES IS NOT THE END OF JOY, CURE IT AND ENJOY LIKE A SMALL BOY</h1>
+        <br>
+    </div>
+    
+    <div class="container">
+        <input type="checkbox" id="flip">
+        <div class="cover">
+            <div class="front">
+                <img src="{% static 'image/Blue.png' %}" alt="">
+                <div class="text">
+                    <span class="text-1">Diabetes</span>
+                </div>
+            </div>
+            <div class="back">
+                <div class="text">
+                </div>
+            </div>
+        </div>
+        <div class="forms">
+            <div class="form-content">
+                <div class="login-form">
+                    <div class="title">Please Enter Your Information</div>
+                    <form method="POST">
+                        {% csrf_token %}
+                        <div class="input-boxes">
+                            <div class="input-box">
+                                {{key.as_p}}
+                            </div>
+
+
+                            <div class="button input-box">
+                                <input type="submit" value="Sumbit">
+
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+
+</body>
+
+</html>
