@@ -4,5 +4,6 @@ from predictor import views
 
 urlpatterns=[
     path('',views.home,name='home'),
-    path('form/',views.form,name='form')
+    path('form/',views.form,name='form'),
+    path('result/',views.result,name='result')
 ]

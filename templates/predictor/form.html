@@ -6,8 +6,11 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>this is form page</h1>
-    <form action="post">
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Navbar</span>
+      </nav>
+    <form action="" method="POST">
+        {%csrf_token%}
         {{key.as_p}}
         <input type="submit" value="submit">
     </form>

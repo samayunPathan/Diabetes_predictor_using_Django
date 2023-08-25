@@ -1,6 +1,7 @@
 from django.contrib import admin
-from predictor.models import User
+from predictor import models
 
 
 # Register your models here.
-admin.site.register(User)
+
+admin.site.register(models.predictor_data)
