@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from predictor import forms
+from .models import predictor_data
 import joblib
 # Create your views here.
 
@@ -21,22 +22,9 @@ def form(request):
 
 
 def result(request):
-    # cls=joblib.load('finalized_model.sav')
-
-    # lis=[]
-    # # lis.append(request.GET['User_Age'])
-    # # lis.append(request.GET['Gender'])
-    # lis.append(request.POST.get('Polyuria'))
-    # lis.append(request.POST.get('Polydipsia'))
-    # lis.append(request.POST.get('udden_weight_loss'))
-    # lis.append(request.POST.get('weakness'))
-    # lis.append(request.POST.get('Polyphagia'))
-    # # lis.append(request.GET['delayed_healing'])
-    # lis.append(request.POST.get('partial_paresis'))
-    # # lis.append(request.GET['Obesity'])
-
-    # ans=cls.predict([lis])
-
-
-    diction={}
-    return render(request,'predictor/output.html',{'answer':ans})
+    predicted = predictor_data.objects.filter().last()
+    context = {
+        'predicted': predicted
+    }
+    
+    return render(request,'predictor/result.html',context)

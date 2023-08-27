@@ -4,4 +4,7 @@ from predictor import models
 
 # Register your models here.
 
-admin.site.register(models.predictor_data)
+class DataAdmin(admin.ModelAdmin):
+    list_display=('User_Name','User_Age','Gender','predictions')
+
+admin.site.register(models.predictor_data,DataAdmin)

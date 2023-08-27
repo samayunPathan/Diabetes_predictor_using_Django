@@ -5,7 +5,7 @@ from predictor import models
 class DataForm(forms.ModelForm):
     class Meta:
         model=models.predictor_data
-        fields=('User_Name','User_Age','Gender','Polyuria','Polydipsia' ,'sudden_weight_loss','weakness','Polyphagia', 'delayed_healing','partial_paresis','Obesity','predictions')
+        fields=('User_Name','User_Age','Gender','Polyuria','Polydipsia' ,'sudden_weight_loss','weakness','Polyphagia', 'delayed_healing','partial_paresis','Obesity')
         labels={
             'User_Name':'Name',
             'User_Age':'Age',
@@ -18,5 +18,5 @@ class DataForm(forms.ModelForm):
             'delayed_healing':'The Wound Has Trouble Healing Or Staying Closed ? ',
             'partial_paresis':'Weakening Of A Muscle Or Group Of Muscles ? ',
             'Obesity':'Anormal Or Excessive Fat Accumulation ? ',
-            'predictions':'PREDICTIONS !!'
+            
         }
