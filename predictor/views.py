@@ -28,3 +28,10 @@ def result(request):
     }
     
     return render(request,'predictor/result.html',context)
+
+def about(request):
+    diction={'key':'hello Are You want to test diabetes'}
+    return render(request,'predictor/about.html',context=diction)
+def contact(request):
+    diction={'key':'hello Are You want to test diabetes'}
+    return render(request,'predictor/contact.html',context=diction)

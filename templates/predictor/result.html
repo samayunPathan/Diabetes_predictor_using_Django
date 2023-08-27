@@ -12,13 +12,14 @@
     <div class="container">
         
                       
-                        {% if predicted %}
+                        <!-- {% if predicted %} -->
+            
                         <p>{{predicted.User_Name}}</p>
                         <p>{{predicted.User_Age}}</p>
                         <p>{{predicted.Gender}}</p>
                         <p>{{predicted.predictions}}</p>
 
-                    {% endif %}
+                    <!-- {% endif %} -->
                     <a href="{% url 'form'%}">go back</a>
                     
     </div>
