@@ -1,7 +1,30 @@
-body{
-  color: aquamarine;
+
+.bg{
+  background-repeat: repeat;
+  background-position: top;
+  background-size: 1900px 520px;
+  background-attachment: fixed;
 }
-.container{
-  /* margin-top: 70%; */
-  margin-bottom: 20%;
+
+.heading-1{
+  text-align: center;
+  margin-top: 4%;
+  color: #fefeff;
+  
+}
+.heading-2{
+  text-align: center;
+  margin-top: 2%;
+  color: #fefeff;
+
+}
+.button {
+  font-weight: 700;
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.button:hover{
+  background: #beea89;
 }

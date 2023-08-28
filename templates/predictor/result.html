@@ -1,28 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'partials/base.html' %}
+{% block content %}
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+{% if predicted %}
 
-<body>
-    <h3>result</h3>
-    <div class="container">
-        
-                      
-                        <!-- {% if predicted %} -->
-            
-                        <p>{{predicted.User_Name}}</p>
-                        <p>{{predicted.User_Age}}</p>
-                        <p>{{predicted.Gender}}</p>
-                        <p>{{predicted.predictions}}</p>
+<p>{{predicted.User_Name}}</p>
+<p>{{predicted.User_Age}}</p>
+<p>{{predicted.Gender}}</p>
+<p>{{predicted.predictions}}</p>
 
-                    <!-- {% endif %} -->
-                    <a href="{% url 'form'%}">go back</a>
-                    
-    </div>
-</body>
+{% endif %}
+<a href="{% url 'form'%}">go back</a>
 
-</html>
+{% endblock %}
