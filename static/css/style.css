@@ -1,7 +1,18 @@
-body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: left;
-    background: #52b9e2;
-    padding: 30px;}
+/* about start  */
+.custom-bg{
+    text-align: justify;
+    font-size: large;
+    font-style: normal;
+    margin-top: 40px;
+    padding: 10px;
+}
+.para{
+    font-weight: bold;
+    color: #0f1514;
+}
+
+/* end about  */
+
+
+/* result start */
+

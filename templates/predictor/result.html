@@ -1,14 +1,20 @@
 {% extends 'partials/base.html' %}
+{% load static%}
+{% block title %}Result{% endblock %}
 {% block content %}
-
+<link rel="stylesheet" href="{%static 'css/restyle.css'%}">
+<body id="bg" style="background-image: url('{% static 'image/result-1.jpg'%}');"></body>
 {% if predicted %}
+<div class="container custom-bg">
+<p class="result">Your Name is :{{predicted.User_Name}} <br> Age : {{predicted.User_Age}} <br> Gender : {{predicted.Gender}} <br> Prediction Result is : {{predicted.predictions}} </p>
+<br>
+    <form action="{%url 'form' %}">
+        <input class="button" type="submit" value="Go Back Or Predict Again &raquo;">
+    </form>
+</form>
 
-<p>{{predicted.User_Name}}</p>
-<p>{{predicted.User_Age}}</p>
-<p>{{predicted.Gender}}</p>
-<p>{{predicted.predictions}}</p>
-
+</div>
 {% endif %}
-<a href="{% url 'form'%}">go back</a>
+
 
 {% endblock %}

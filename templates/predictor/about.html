@@ -1,6 +1,27 @@
 {% extends 'partials/base.html' %}
-{% block content  %}
-<div class="container">
-    <h2>hello</h2>
+{%load static%}
+{% block title %}ABOUT{% endblock %}
+{% block content %}
+<body id="bg" style="background-image: url('{% static 'image/die.jpg'%}');"></body>
+<link rel="stylesheet" href="{% static 'css/style.css'%}">
+<div class="container custom-bg">
+    <p class="para">
+        "Within the realm of healthcare innovation, our Diabetes Prediction Django App stands as a beacon of hope. It is
+        a digital sentinel,a guardian of wellness in the face of the growing shadow of diabetes.
+        In a world where health is both a treasure and a concern, our mission is to bestow upon you the gift of
+        foresight.
+        We harness the power of machine learning, the magic of data, and the wisdom of medical
+        insight to craft a tool that unravels the mysteries of your health journey.
+        Like a wise oracle, our app gazes into your unique constellation of factors -
+        your age, your lifestyle, your history - and with a whisper of ones and zeros,
+        it reveals your destiny, your risk of diabetes.
+        But we are more than just numbers and algorithms. Our team, a fellowship of healthcare visionaries and tech
+        sorcerers,
+        has woven an enchanted tapestry of precision and empathy. We seek not only to predict
+        but to empower, to provide the knowledge that ignites the beacon of proactive <br><br>
+        Journey with us as we navigate the uncharted seas of wellness, guided by the compass of information.
+        Let our app be the map to a future where you are the author of your health story, a tale of foresight, and a
+        life well-lived."
+    </p>
 </div>
 {% endblock %}

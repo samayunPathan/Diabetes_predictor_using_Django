@@ -2,61 +2,30 @@
 {% load static%}
 {% block content  %}
 
-<link rel="stylesheet" href="{%static 'css/mystyle.css'%}">
-<body id="bg" style="background-image: url('{% static 'image/pho.avif'%}');">
-    
+<link rel="stylesheet" href="{% static 'css/mystyle.css '%}">
+<body id="bg" style="background-image: url('{% static 'image/premi.avif'%}');">
+
 
 <h3 class="heading-1">KEEP CLAM AND ASK ABOUT DIABETES</h1>
 <h2 class="heading-2">DIABETES IS NOT THE END OF JOY, CURE IT AND ENJOY LIKE A SMALL BOY !</h1>
 
+<div class="container custom-bg">
+    <p class="para">Diabetes awareness is like a delicate bloom in the garden of health. It empowers us to prevent its onset, detect it early, and manage it effectively.
+        This knowledge is the brushstroke that paints a more vibrant and healthier life canvas.</p>
+</div>
+
 <section>
 <div class ="enter">
-    <h4 class="heading-2">LET'S START A DIABETES PREDICTION GAME
+    <h4 class="heading-2">LET'S START A DIABETES PREDICTION 
         <br>
     <br>
         <form action="{%url 'form' %}">
-            <input class="button" type="submit" value="Start">
+            <input class="button" type="submit" value="Try it Yourself &raquo;">
         </form>
         
     </h4>
 </div>
-<!-- <div class="container">
-    <div class="cover">
-      <div class="front">
-        <img src="{%static 'image/Blue.png'%}" alt="">
-        <div class="text">
-          <span class="text-1">DIABETES</span>
-          
-        </div>
-      </div>
-      
-    </div>
-    <div class="forms">
-        <div class="form-content">
-          <div class="login-form">
-            <div class="title">LET'S START A DIABETES PREDICTION GAME</div>
-          <form action="{%url 'form'%}">
-            <div class="input-boxes">
-              <div class="input-box">
-                <i class="fas fa-envelope"></i>
-                
-              </div>
-              <div class="input-box">
-                <i class="fas fa-lock"></i>
-                
-              </div>
-              
-              <div class="button input-box">
-                <input type="submit" value="START">
-              </div>
-              
-            </div>
-        </form>
-      </div>
-        
-    </div>
-    </div>
-  </div> -->
+
   </section>
   
   </body>

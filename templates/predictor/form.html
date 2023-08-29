@@ -1,7 +1,15 @@
 {% extends 'partials/base.html' %}
-{% block title %}Home{% endblock %}
+{%load static %}
+{% block title %}Entry Form{% endblock %}
 {% load crispy_forms_tags %}
 {% block content  %}
+<link rel="stylesheet" href="{%static 'css/restyle.css'%}">
+<body id="bg" style="background-image: url('{% static 'image/premi.avif'%}');"></body>
+<style>
+    .container{
+        margin-top: 0ch;
+    }
+</style>
 <div class="container">
     <div class="row mt-4">
         <div class="col-md-8 offset-md-2">

@@ -1,0 +1,33 @@
+.custom-bg{
+    text-align: center;
+    font-size: large;
+    font-style: normal;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    margin-top: 8%;
+}
+.result{
+    color: rgb(2, 58, 107);
+    font-weight: bold;
+    font-size: 40px;
+}
+.button {
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font-size: medium;
+  }
+.button:hover{
+    background: rgb(16, 137, 243);
+}
+
+
+
+/* form style start  */
+
+.btn{
+    pal
+}
