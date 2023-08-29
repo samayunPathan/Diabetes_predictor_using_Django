@@ -1,14 +1,19 @@
 .heading-1{
     text-align: center;
-    margin-top: 4%;
-    color: #f5f5fa;
+    margin-top: 5%;
+    color: #fff;
     
   }
   .heading-2{
     text-align: center;
     margin-top: 2%;
-    color: #f3f6f2;
+    color: #fff;
   
+  }
+  .heading-3{
+    text-align: center;
+    margin-top: 2%;
+    color: #fff;
   }
   .button {
     font-weight: 700;
@@ -21,18 +26,22 @@
   .button:hover{
     background: #9fd9e7;
   }
+  .container{
+    margin-top: 6%;
+  }
   .custom-bg{
     border-radius: 12px;
-    background: #174651;
+    background: #f7fbf6;
     margin-top: 40px;
     padding: 15px;
   
   }
   .para{
-    font-weight: 600px;
+    font-weight: bold;
     font-size: medium;
     text-align: center;
-    color: #f1efef;
+    color:#1f90d6;
+
     
   }
   .enter{
