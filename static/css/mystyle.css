@@ -1,5 +1,4 @@
- 
-  .heading-1{
+.heading-1{
     text-align: center;
     margin-top: 4%;
     color: #f5f5fa;
@@ -8,7 +7,7 @@
   .heading-2{
     text-align: center;
     margin-top: 2%;
-    color: #f2f2f7;
+    color: #f3f6f2;
   
   }
   .button {
@@ -35,4 +34,10 @@
     text-align: center;
     color: #f1efef;
     
+  }
+  .enter{
+    color: aquamarine;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 2px;
   }

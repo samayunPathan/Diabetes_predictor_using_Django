@@ -21,7 +21,7 @@
     font-size: medium;
   }
 .button:hover{
-    background: rgb(16, 137, 243);
+    background: rgb(102, 172, 234);
 }
 
 
@@ -29,5 +29,7 @@
 /* form style start  */
 
 .btn{
-    pal
+    text-align: center;
+    display: block;
+    margin: 0 auto;
 }

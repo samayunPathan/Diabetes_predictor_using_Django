@@ -1,9 +1,9 @@
-
 .wrapper{
     margin: 50px auto;
     width: 90%;
 }
 .text{
+  
  color: #eee9e9;
  size: 16px;
 }
@@ -13,7 +13,7 @@
 }
 img{
     max-width: 620px;
-    height: 500px;
+    height: 540px;
     float: left;
     border: 3px solid #eee9e9;
     border-radius: 10px;

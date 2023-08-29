@@ -13,7 +13,7 @@ class DataForm(forms.ModelForm):
             'Polyuria':'Excessive Or An Abnormally Large Production Of Urine ? ',
             'Polydipsia':'Excessive Thirst ? ',
             'sudden_weight_loss':'Sudden Weight Loss ? ',
-            'weakness':'feel Weak ? ',
+            'weakness':'Feel Weak ? ',
             'Polyphagia':'Excessive Appetite ? ',
             'delayed_healing':'The Wound Has Trouble Healing Or Staying Closed ? ',
             'partial_paresis':'Weakening Of A Muscle Or Group Of Muscles ? ',

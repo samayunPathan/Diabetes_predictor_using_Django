@@ -3,7 +3,7 @@
 {% block title %}Result{% endblock %}
 {% block content %}
 <link rel="stylesheet" href="{%static 'css/restyle.css'%}">
-<body id="bg" style="background-image: url('{% static 'image/result-1.jpg'%}');"></body>
+<body id="bg" style="background-image: url('{% static 'image/mona.jpg'%}');"></body>
 {% if predicted %}
 <div class="container custom-bg">
 <p class="result">Your Name is :{{predicted.User_Name}} <br> Age : {{predicted.User_Age}} <br> Gender : {{predicted.Gender}} <br> Prediction Result is : {{predicted.predictions}} </p>
