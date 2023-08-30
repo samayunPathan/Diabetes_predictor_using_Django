@@ -26,6 +26,7 @@ class predictor_data(models.Model):
     sudden_weight_loss=models.PositiveBigIntegerField(choices=makechoise.choices,null=True)
     weakness=models.PositiveBigIntegerField(choices=makechoise.choices,null=True)
     Polyphagia =models.PositiveBigIntegerField(choices=makechoise.choices,null=True)
+    Irritability=models.PositiveBigIntegerField(choices=makechoise.choices,null=True)
     delayed_healing=models.PositiveBigIntegerField(choices=makechoise.choices,null=True)
     partial_paresis=models.PositiveBigIntegerField(choices=makechoise.choices,null=True)
     Obesity=models.PositiveBigIntegerField(choices=makechoise.choices,null=True)
@@ -33,7 +34,7 @@ class predictor_data(models.Model):
 
     def save(self,*args,**kwargs):
         ml_model=joblib.load('ml_model/finalized_model.joblib')
-        self.predictions=ml_model.predict([[self.Polyuria,self.Polydipsia,self.sudden_weight_loss,self.weakness,self.Polyphagia,self.delayed_healing,self.partial_paresis,self.Obesity]])
+        self.predictions=ml_model.predict([[self.User_Age,self.Polyuria,self.Polydipsia,self.sudden_weight_loss,self.weakness,self.Polyphagia,self.Irritability,self.delayed_healing,self.partial_paresis,self.Obesity]])
         return super().save(*args,**kwargs)
 
 
