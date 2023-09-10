@@ -10,7 +10,7 @@ class predictor_data(models.Model):
     class gender(models.TextChoices):
         m='Male','Male'
         f='Female','Female'
-        o= 'LGBTIQA+',' LGBTIQA+'
+        # o= 'LGBTIQA+',' LGBTIQA+'
     
     class makechoise(models.IntegerChoices):
         A = 0, "NO"

@@ -15,7 +15,7 @@ class DataForm(forms.ModelForm):
             'sudden_weight_loss':'Sudden Weight Loss ? ',
             'weakness':'Feel Weak ? ',
             'Polyphagia':'Excessive Appetite ? ',
-            'Irritability':'quick to get annoyed, especially over small things',
+            'Irritability':'Quick to get annoyed, especially over small things',
             'delayed_healing':'The Wound Has Trouble Healing Or Staying Closed ? ',
             'partial_paresis':'Weakening Of A Muscle Or Group Of Muscles ? ',
             'Obesity':'Anormal Or Excessive Fat Accumulation ? ',
